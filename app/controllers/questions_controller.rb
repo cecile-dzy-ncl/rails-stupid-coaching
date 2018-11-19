@@ -3,5 +3,13 @@ class QuestionsController < ApplicationController
   end
 
   def answer
+    @question = params[:question]
+    if @question == "I am going to work"
+      return @answer = "Great!"
+    elsif @question.chars.last(1).join == "?"
+      return @answer = "Silly question, get dressed and go to work!"
+    else
+      return @answer = "I don't care, get dressed and go to work!"
+    end
   end
 end
