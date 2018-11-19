@@ -1,5 +1,10 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<blockquote class="blockquote">
+  <p><%= @question %></p>
+  <footer class="blockquote-footer">You</footer>
+</blockquote>
+<blockquote class="blockquote">
+  <p><%= @answer %></p>
+  <footer class="blockquote-footer">Your coach</footer>
+</blockquote>
 
-<h1><%= @question %></h1>
-<p><%= @answer %></p>
+<%= link_to "Ask a new question", "/ask" %>
